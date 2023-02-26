@@ -1,0 +1,275 @@
+@charset "UTF-8";
+:root{
+    --font-principal:'Luckiest Guy', cursiva;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 60%;
+}
+html{
+    font-size: 60%;
+}
+img{
+    max-width: 100%
+}
+header#cabecalho{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    background: url(imagens/Header\ Background.png) no-repeat center ;
+    background-size: cover;
+    height: 500px;
+    padding: 0 20px;
+}
+header#cabecalho > h1{
+    font-size: 3.2rem;
+    font-family: var(--font-principal);
+    font-weight: 400;
+    line-height: 35px;
+    color: white;
+    padding-top: 50px; 
+}
+header#cabecalho > p{
+    line-height: 21px;
+    font-family: sans-serif;
+    color: white;
+    font-size: 16px;
+}
+header#cabecalho div.cabecalho-botoes{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+header#cabecalho div.botao{
+    background-color:white;
+    width: 370px;
+    height: 54px;
+    border-radius: 28px;
+    position: relative;
+    margin: auto;
+}
+header#cabecalho div.botao > p{
+    position: absolute;
+    top: 16px;
+    left: 109px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+header#cabecalho div#black{
+    background-color: black;
+    color: white;
+    position: relative;
+}
+header#cabecalho div#black > p{
+    position: absolute;
+    left: 73px;
+}
+div.secao-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+div.secao-texto > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;  
+    width: 100%;
+}
+div.secao-texto > p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+section#secao-01{                           
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}                                                                                    
+section#secao-02{                 
+    background-color: rgba(246, 246, 246, 1);
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}                                
+section#secao-03{                                     
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}                                                        
+section#secao-04{                 
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+section#secao-04 > h1{
+    font-size: 2.5rem;
+    font-family: var(--font-principal);
+    font-weight: 400;
+}
+section#secao-04 > p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section#secao-04 > img{
+    margin: 0 auto;
+}                                  
+footer#rodapé{                                         
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(35, 39, 42, 1);
+    height: 140px;
+}   
+div.container-contato{
+    display: flex; 
+    gap: 25px;
+}   
+div.content-contato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+div.container-contato > a{
+    text-decoration: none;
+}
+div.content-contato > p{
+    color: white;
+    font-family: system-ui;
+    font-size: 16px;
+}
+div.content-contato:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+div.content-contato > img{
+    width: 35px;
+    border-radius: 50%;
+}
+div.phone{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+div.phone > p{
+    font-size: 15px;
+    color: white;
+}
+
+@media screen and (min-width: 550px) and (max-width: 768px){
+    html{
+        font-size: 65%;
+    }
+    header#cabecalho{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    header#cabecalho > p{
+        text-align: justify;
+        width: 520px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width:1024px){
+    html{
+        font-size: 75%;
+    }
+    header#cabecalho{
+        align-items: center;
+        height: 450px;
+    }
+    header#cabecalho > p {
+        width: 700px;
+    }
+    section img{
+        margin: 0 auto;
+        width: 65%;
+    }
+    section#secao-01{
+        flex-direction: row;
+    }
+    section#secao-02{
+        flex-direction: row-reverse;
+    }
+    section#secao-03{
+        flex-direction: row;
+    }
+    section#secao-04{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1025px){
+    html{
+        font-size: 83%;
+    }
+    header#cabecalho{
+        align-items: center;
+        height: 459px;
+        padding-top: 30px;
+    }
+    header#cabecalho > p{
+        width: 757px;
+        text-align: center;
+    }
+    header#cabecalho div.cabecalho-botoes{
+        display: flex;
+        flex-direction: row;
+    }
+    header#cabecalho div.cabecalho-botoes div#black.botao{
+        width: 281px;
+        height: 46px;
+    }
+    header#cabecalho div.cabecalho-botoes div#black.botao > p{
+        top: 14px;
+        left: 21px;
+    }
+    header#cabecalho div.cabecalho-botoes div.botao{
+        width: 206px;
+        height: 46px;
+    }
+    header#cabecalho div.cabecalho-botoes div.botao > p{
+        left: 26px;
+        top: 14px;
+    }
+    section#secao-01{
+        flex-direction: row;
+        width: 1000px;
+        margin: auto;
+    }
+    section#secao-02{
+        flex-direction: row-reverse;
+        width: 1000px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    section#secao-03{
+        flex-direction: row;
+        width: 1000px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    section#secao-04{
+        margin-top: 70px;
+        align-items: center;
+    }
+    section#secao-04 > h1{
+        text-align: center;
+    }
+    section#secao-04 > p{
+        width: 800px;
+    }
+}
